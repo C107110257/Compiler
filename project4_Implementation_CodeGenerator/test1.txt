@@ -1,0 +1,6 @@
+procedure ARITH_EXPR4 is
+declare
+begin
+write (3 + 4) * -6 / -3 % 2;
+end;
+

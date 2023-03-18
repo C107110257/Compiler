@@ -1,0 +1,7 @@
+scanner: lex.yy.c
+	gcc -o scanner lex.yy.c
+	type input.txt | .\scanner.exe
+lex.yy.c: rose.l
+	flex rose.l
+	gcc -o scanner lex.yy.c
+	type input.txt | .\scanner.exe
